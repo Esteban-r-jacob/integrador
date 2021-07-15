@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+* img {
+  width: 100%;
+  height: auto; }
+
+body {
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
+  max-height: 100%; }
+
+li {
+  list-style: none; }
+
+@media (min-width: 340px) {
+  nav {
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #e7e8f3; }
+    nav img {
+      width: 40%; }
+    nav ul {
+      text-align: center;
+      padding-top: 15px; }
+      nav ul li {
+        color: mediumblue; }
+  #front {
+    width: 100%;
+    background-image: url(../IMGS/pxfuel.com.jpg);
+    background-position: center;
+    background-size: cover; }
+    #front #important {
+      width: 100%;
+      height: 550px;
+      display: flex;
+      flex-direction: column; }
+      #front #important h1 {
+        font-size: 3em;
+        padding-top: 35px;
+        color: mediumblue;
+        padding-left: 10px; }
+      #front #important h2 {
+        font-size: 0.7em;
+        padding: 10px 0px 40px 10px; }
+      #front #important ol {
+        padding-top: 25px; }
+        #front #important ol li {
+          text-transform: uppercase;
+          font-size: 1em;
+          color: mediumblue;
+          padding-bottom: 5px;
+          padding-left: 10px; }
+  .contenedor {
+    display: flex;
+    flex-direction: column; }
+    .contenedor aside {
+      width: 100%;
+      height: 100%; }
+      .contenedor aside form {
+        width: 100%;
+        height: auto;
+        border: 2px solid  mediumblue;
+        border-radius: 5%;
+        background: mediumblue; }
+        .contenedor aside form h3 {
+          color: mistyrose;
+          text-align: center;
+          padding: 20px; }
+        .contenedor aside form ul {
+          height: 100%; }
+          .contenedor aside form ul li {
+            padding: 10px 0px;
+            display: flex;
+            flex-direction: column;
+            align-items: center; }
+            .contenedor aside form ul li label {
+              padding: 10px 0px;
+              text-align: left;
+              color: mistyrose;
+              text-transform: uppercase; }
+            .contenedor aside form ul li input {
+              text-align: center;
+              background: mediumblue;
+              color: mistyrose;
+              border: none;
+              border-bottom: 1px solid orange; }
+            .contenedor aside form ul li #seinup {
+              color: springgreen;
+              height: 54px;
+              font-size: 2em;
+              border: 2px solid springgreen;
+              text-transform: uppercase;
+              text-shadow: 2px 0px orange; }
+  section {
+    width: 100%;
+    height: 100%; }
+    section #related {
+      width: 98%;
+      height: 98%;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around; }
+      section #related li {
+        padding: 2em;
+        font-size: 10px;
+        width: 300px;
+        border: 1px solid mediumblue;
+        border-radius: 15%;
+        margin: 2em; }
+        section #related li h4 {
+          padding: 10px; }
+          section #related li h4 img {
+            width: 300px; }
+  footer {
+    text-align: center;
+    background: mediumblue;
+    color: mistyrose; }
+    footer button {
+      color: springgreen;
+      height: 54px;
+      font-size: 2em;
+      border: 2px solid #294135;
+      text-transform: uppercase;
+      text-shadow: 2px 0px orange;
+      margin-top: 10px;
+      background: mediumblue; } }
+
+@media (min-width: 649px) {
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; }
+    nav img {
+      max-width: 10%; }
+    nav span {
+      font-size: 1.5em; }
+  .contenedor {
+    display: flex;
+    flex-direction: row; }
+    .contenedor #front #important {
+      height: 39em; }
+      .contenedor #front #important h1 {
+        font-size: 4em;
+        padding-top: 0; }
+      .contenedor #front #important h2 {
+        font-size: 0.8em; } }
+
+@media (min-width: 649px) and (min-width: 1029px) {
+  .contenedor #front #important h1 {
+    font-size: 4em;
+    padding-top: 0; }
+  .contenedor #front #important h2 {
+    font-size: 1.1em; } }
+
+@media (min-width: 649px) {
+  section #related {
+    flex-direction: row; }
+    section #related li:hover {
+      width: 400px;
+      font-size: 20px;
+      transition: 0.5s; } }
