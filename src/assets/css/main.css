@@ -55,12 +55,14 @@ li {
       flex-direction: column;
       justify-content: flex-end;
       align-items: center;
-      height: 19em;
-      margin-bottom: 25px; }
+      height: 11em;
+      margin-bottom: 10px;
+      font-size: 21px; }
       main section h2 {
         text-transform: uppercase;
         color: antiquewhite;
-        text-shadow: 1px 2px black; }
+        text-shadow: 1px 2px black;
+        font-size: 20px; }
       main section h3 {
         text-transform: uppercase;
         color: antiquewhite;
@@ -68,13 +70,12 @@ li {
         padding-top: 5px; }
       main section span {
         text-transform: uppercase;
-        font-size: 2em;
+        font-size: 1em;
         color: antiquewhite;
         text-shadow: 2px 2px 12px black;
         padding-top: 5px; }
     main aside {
-      height: 4em;
-      padding-top: 1em; }
+      height: 3em; }
       main aside ul {
         width: 100%;
         display: flex;
@@ -86,14 +87,14 @@ li {
             opacity: 0.5; }
     main footer {
       width: 100%;
-      height: 5em;
+      height: 4em;
       display: flex;
       justify-content: space-around;
       align-items: center;
       background: black;
-      margin-top: 3em; }
+      margin-top: 2em; }
       main footer #contenedor {
-        width: 130px;
+        width: 105px;
         animation-name: girar;
         animation-duration: 5s;
         animation-direction: normal;
@@ -106,9 +107,22 @@ li {
         width: 110px;
         color: aliceblue; } }
 
+@media (min-width: 340px) {
+  main section {
+    height: 13em; }
+  main aside {
+    height: 3em;
+    margin-top: 2em; }
+  main footer {
+    margin-top: 4em; } }
+
 @media (min-width: 411px) {
   main section {
-    height: 22em; }
+    height: 16em; }
+    main section h1 {
+      font-size: 25px; }
+    main section span {
+      font-size: 2em; }
   main aside {
     padding-top: 2em; }
   main footer {
@@ -128,9 +142,9 @@ li {
       font-size: 1.5em;
       text-shadow: 1px 3px black; }
   main section {
-    height: 26em; }
+    height: 20em; }
     main section h2 {
-      font-size: 3em;
+      font-size: 2em;
       padding-top: 3em; }
     main section h3 {
       font-size: 2em; }
@@ -153,7 +167,7 @@ li {
   main nav ol {
     font-size: 17px; }
   main section {
-    height: 34em; }
+    height: 28em; }
   main footer {
     height: 8em;
     margin-top: 10em; }
@@ -170,7 +184,7 @@ li {
       main nav ol li a {
         color: #131212; }
   main section {
-    height: 24em; }
+    height: 15em; }
   main aside {
     height: 5em;
     padding-top: 0; }

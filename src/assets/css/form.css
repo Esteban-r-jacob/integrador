@@ -27,17 +27,17 @@ li {
   div {
     width: 90%;
     margin: 1em;
-    margin-bottom: 20em; }
-    div h1, div h2 {
-      margin-top: 8px;
-      margin-bottom: 1em;
+    margin-bottom: 10em; }
+    div h1 {
+      color: blanchedalmond; }
+    div h2 {
       color: blanchedalmond; }
     div label {
       background: black;
       text-transform: uppercase;
       color: blanchedalmond; }
     div input {
-      margin: 11px;
+      margin: 1px;
       background: black;
       text-align: center;
       border: none;
@@ -49,6 +49,13 @@ li {
       div .boton input {
         margin: 0;
         border: none; } }
+
+@media (min-width: 340px) {
+  div {
+    margin: 2em;
+    margin-bottom: 20em; }
+    div input {
+      margin-top: 10px; } }
 
 @media (min-width: 768px) {
   main p {

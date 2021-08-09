@@ -33,7 +33,7 @@ li {
     width: 100%;
     background: blanchedalmond; }
     section div {
-      width: 95%;
+      width: 50%;
       padding-top: 60px;
       margin: 0px auto; }
       section div img {
@@ -80,6 +80,10 @@ li {
     footer #MedioPago {
       width: 110px;
       color: aliceblue; } }
+
+@media (min-width: 340px) {
+  section div {
+    width: 90%; } }
 
 @media (min-width: 768px) {
   header {

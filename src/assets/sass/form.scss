@@ -34,11 +34,13 @@ li{
    div {
         width: 90%;
          margin: 1em;
-         margin-bottom: 20em;
+         margin-bottom: 10em;
 
-         h1 ,h2 {
-             margin-top: 8px;
-             margin-bottom: 1em;
+         h1 {
+            color: blanchedalmond;
+        }
+
+         h2 {
              color: blanchedalmond;
          }
 
@@ -49,7 +51,7 @@ li{
          }
 
          input {
-             margin: 11px;
+             margin: 1px;
              background: rgb(0, 0, 0);
              text-align: center;
              border: none;
@@ -68,6 +70,18 @@ li{
          }
     }
 
+}
+
+@media (min-width:340px) {
+
+    div {
+        margin: 2em;
+        margin-bottom: 20em;
+
+        input {
+            margin-top: 10px;
+        }
+    }
 }
 
 @media (min-width:768px){
