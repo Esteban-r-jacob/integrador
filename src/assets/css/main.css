@@ -11,161 +11,211 @@ body {
   width: 100vw;
   height: 100vh;
   max-width: 100%;
-  max-height: 100%; }
+  max-height: 100%;
+  animation-name: ancho;
+  animation-direction: normal;
+  animation-duration: 4s; }
 
 li {
   list-style: none; }
 
-@media (min-width: 340px) {
-  nav {
-    margin-bottom: 25px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: #e7e8f3; }
-    nav img {
-      width: 40%; }
-    nav ul {
-      text-align: center;
-      padding-top: 15px; }
-      nav ul li {
-        color: mediumblue; }
-  #front {
+@media (min-width: 300px) {
+  main {
     width: 100%;
-    background-image: url(../IMGS/pxfuel.com.jpg);
+    height: 100%;
+    background-image: url(../IMGS/imgmain.jpg);
     background-position: center;
     background-size: cover; }
-    #front #important {
+    main nav {
       width: 100%;
-      height: 550px;
-      display: flex;
-      flex-direction: column; }
-      #front #important h1 {
-        font-size: 3em;
-        padding-top: 35px;
-        color: mediumblue;
-        padding-left: 10px; }
-      #front #important h2 {
-        font-size: 0.7em;
-        padding: 10px 0px 40px 10px; }
-      #front #important ol {
-        padding-top: 25px; }
-        #front #important ol li {
-          text-transform: uppercase;
-          font-size: 1em;
-          color: mediumblue;
-          padding-bottom: 5px;
-          padding-left: 10px; }
-  .contenedor {
-    display: flex;
-    flex-direction: column; }
-    .contenedor aside {
-      width: 100%;
-      height: 100%; }
-      .contenedor aside form {
-        width: 100%;
-        height: auto;
-        border: 2px solid  mediumblue;
-        border-radius: 5%;
-        background: mediumblue; }
-        .contenedor aside form h3 {
-          color: mistyrose;
-          text-align: center;
-          padding: 20px; }
-        .contenedor aside form ul {
-          height: 100%; }
-          .contenedor aside form ul li {
-            padding: 10px 0px;
-            display: flex;
-            flex-direction: column;
-            align-items: center; }
-            .contenedor aside form ul li label {
-              padding: 10px 0px;
-              text-align: left;
-              color: mistyrose;
-              text-transform: uppercase; }
-            .contenedor aside form ul li input {
-              text-align: center;
-              background: mediumblue;
-              color: mistyrose;
-              border: none;
-              border-bottom: 1px solid orange; }
-            .contenedor aside form ul li #seinup {
-              color: springgreen;
-              height: 54px;
-              font-size: 2em;
-              border: 2px solid springgreen;
-              text-transform: uppercase;
-              text-shadow: 2px 0px orange; }
-  section {
-    width: 100%;
-    height: 100%; }
-    section #related {
-      width: 98%;
-      height: 98%;
-      text-align: center;
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: space-around; }
-      section #related li {
-        padding: 2em;
-        font-size: 10px;
-        width: 300px;
-        border: 1px solid mediumblue;
-        border-radius: 15%;
-        margin: 2em; }
-        section #related li h4 {
-          padding: 10px; }
-          section #related li h4 img {
-            width: 300px; }
-  footer {
-    text-align: center;
-    background: mediumblue;
-    color: mistyrose; }
-    footer button {
-      color: springgreen;
-      height: 54px;
-      font-size: 2em;
-      border: 2px solid #294135;
-      text-transform: uppercase;
-      text-shadow: 2px 0px orange;
-      margin-top: 10px;
-      background: mediumblue; } }
+      text-align: center;
+      padding-top: 1em; }
+      main nav img {
+        width: 0; }
+      main nav h1 {
+        color: aliceblue; }
+      main nav ol {
+        display: flex;
+        font-size: 11px; }
+        main nav ol li {
+          padding: 9px;
+          text-transform: uppercase; }
+          main nav ol li a {
+            color: aliceblue;
+            text-shadow: 1px 1px 10px black;
+            text-decoration: none; }
+          main nav ol li a:hover {
+            font-size: 17px;
+            color: royalblue; }
+    main section {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+      height: 19em;
+      margin-bottom: 25px; }
+      main section h2 {
+        text-transform: uppercase;
+        color: antiquewhite;
+        text-shadow: 1px 2px black; }
+      main section h3 {
+        text-transform: uppercase;
+        color: antiquewhite;
+        text-shadow: 2px 2px 12px black;
+        padding-top: 5px; }
+      main section span {
+        text-transform: uppercase;
+        font-size: 2em;
+        color: antiquewhite;
+        text-shadow: 2px 2px 12px black;
+        padding-top: 5px; }
+    main aside {
+      height: 4em;
+      padding-top: 1em; }
+      main aside ul {
+        width: 100%;
+        display: flex;
+        justify-content: space-between; }
+        main aside ul li {
+          width: 60px;
+          mix-blend-mode: luminosity; }
+          main aside ul li img {
+            opacity: 0.5; }
+    main footer {
+      width: 100%;
+      height: 5em;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background: black;
+      margin-top: 3em; }
+      main footer #contenedor {
+        width: 130px;
+        animation-name: girar;
+        animation-duration: 5s;
+        animation-direction: normal;
+        animation-delay: 2s; }
+      main footer #contenedor:hover {
+        width: 185px;
+        transition: 0.3s;
+        animation: temblar 0.5s 1; }
+      main footer #MedioPago {
+        width: 110px;
+        color: aliceblue; } }
 
-@media (min-width: 649px) {
-  nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center; }
-    nav img {
-      max-width: 10%; }
-    nav span {
-      font-size: 1.5em; }
-  .contenedor {
+@media (min-width: 411px) {
+  main section {
+    height: 22em; }
+  main aside {
+    padding-top: 2em; }
+  main footer {
+    margin-top: 7em; } }
+
+@media (min-width: 767px) {
+  main nav {
     display: flex;
     flex-direction: row; }
-    .contenedor #front #important {
-      height: 39em; }
-      .contenedor #front #important h1 {
-        font-size: 4em;
-        padding-top: 0; }
-      .contenedor #front #important h2 {
-        font-size: 0.8em; } }
+    main nav img {
+      min-width: 15%;
+      mix-blend-mode: darken;
+      padding: 1em; }
+    main nav h1 {
+      display: none; }
+    main nav a {
+      font-size: 1.5em;
+      text-shadow: 1px 3px black; }
+  main section {
+    height: 26em; }
+    main section h2 {
+      font-size: 3em;
+      padding-top: 3em; }
+    main section h3 {
+      font-size: 2em; }
+    main section span {
+      font-size: 3em; }
+  main aside {
+    height: 11em; }
+    main aside ul li {
+      width: 150px; }
+  main footer {
+    height: 7em; }
+    main footer #contenedor {
+      width: 183px; }
+    main footer #MedioPago {
+      width: 220px;
+      text-align: center;
+      font-size: 1.5em; } }
 
-@media (min-width: 649px) and (min-width: 1029px) {
-  .contenedor #front #important h1 {
-    font-size: 4em;
+@media (min-width: 1023px) {
+  main nav ol {
+    font-size: 17px; }
+  main section {
+    height: 34em; }
+  main footer {
+    height: 8em;
+    margin-top: 10em; }
+    main footer #contenedor {
+      width: 250px; }
+    main footer #MedioPago {
+      width: 12em; } }
+
+@media (min-width: 1100px) {
+  main nav {
+    height: 22em; }
+    main nav ol {
+      font-size: 10px; }
+      main nav ol li a {
+        color: #131212; }
+  main section {
+    height: 24em; }
+  main aside {
+    height: 5em;
     padding-top: 0; }
-  .contenedor #front #important h2 {
-    font-size: 1.1em; } }
+    main aside ul {
+      justify-content: space-around; }
+      main aside ul li {
+        width: 65px; }
+  main footer {
+    height: 8em;
+    margin-top: 2.5em;
+    background: none;
+    justify-content: center; }
+    main footer #contenedor {
+      width: 180px; }
+    main footer #MedioPago {
+      color: blanchedalmond;
+      text-shadow: 3px 1px 6px darkblue;
+      margin-left: 3em; } }
 
-@media (min-width: 649px) {
-  section #related {
-    flex-direction: row; }
-    section #related li:hover {
-      width: 400px;
-      font-size: 20px;
-      transition: 0.5s; } }
+@keyframes girar {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+
+@keyframes temblar {
+  0% {
+    transform: translate(0px, 0px); }
+  10% {
+    transform: translate(15px, 0px); }
+  20% {
+    transform: translate(0px, 0px); }
+  30% {
+    transform: translate(15px, 0px); }
+  40% {
+    transform: translate(0px, 0px); }
+  50% {
+    transform: translate(15px, 0px); }
+  60% {
+    transform: translate(0px, 0px); }
+  70% {
+    transform: translate(15px, 0px); }
+  80% {
+    transform: translate(0px, 0px); }
+  90% {
+    transform: translate(15px, 0px); }
+  100% {
+    transform: translate(0px, 0px); } }
